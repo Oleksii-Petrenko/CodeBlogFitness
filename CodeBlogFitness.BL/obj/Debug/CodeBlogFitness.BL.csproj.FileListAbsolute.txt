@@ -1,0 +1,6 @@
+D:\AAA\practice\CodeBlogFitness\CodeBlogFitness.BL\bin\Debug\CodeBlogFitness.BL.dll
+D:\AAA\practice\CodeBlogFitness\CodeBlogFitness.BL\bin\Debug\CodeBlogFitness.BL.pdb
+D:\AAA\practice\CodeBlogFitness\CodeBlogFitness.BL\obj\Debug\CodeBlogFitness.BL.csprojAssemblyReference.cache
+D:\AAA\practice\CodeBlogFitness\CodeBlogFitness.BL\obj\Debug\CodeBlogFitness.BL.csproj.CoreCompileInputs.cache
+D:\AAA\practice\CodeBlogFitness\CodeBlogFitness.BL\obj\Debug\CodeBlogFitness.BL.dll
+D:\AAA\practice\CodeBlogFitness\CodeBlogFitness.BL\obj\Debug\CodeBlogFitness.BL.pdb

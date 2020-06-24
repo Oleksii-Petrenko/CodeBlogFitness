@@ -1,0 +1,10 @@
+D:\AAA\practice\CodeBlogFitness\CodeBlogFitness.CMD\bin\Debug\CodeBlogFitness.CMD.exe.config
+D:\AAA\practice\CodeBlogFitness\CodeBlogFitness.CMD\bin\Debug\CodeBlogFitness.CMD.exe
+D:\AAA\practice\CodeBlogFitness\CodeBlogFitness.CMD\bin\Debug\CodeBlogFitness.CMD.pdb
+D:\AAA\practice\CodeBlogFitness\CodeBlogFitness.CMD\bin\Debug\CodeBlogFitness.BL.dll
+D:\AAA\practice\CodeBlogFitness\CodeBlogFitness.CMD\bin\Debug\CodeBlogFitness.BL.pdb
+D:\AAA\practice\CodeBlogFitness\CodeBlogFitness.CMD\obj\Debug\CodeBlogFitness.CMD.csprojAssemblyReference.cache
+D:\AAA\practice\CodeBlogFitness\CodeBlogFitness.CMD\obj\Debug\CodeBlogFitness.CMD.csproj.CoreCompileInputs.cache
+D:\AAA\practice\CodeBlogFitness\CodeBlogFitness.CMD\obj\Debug\CodeBlogFitness.CMD.csproj.CopyComplete
+D:\AAA\practice\CodeBlogFitness\CodeBlogFitness.CMD\obj\Debug\CodeBlogFitness.CMD.exe
+D:\AAA\practice\CodeBlogFitness\CodeBlogFitness.CMD\obj\Debug\CodeBlogFitness.CMD.pdb

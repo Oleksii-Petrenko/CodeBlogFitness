@@ -3,10 +3,10 @@
 
 namespace CodeBlogFitness.BL.Model
 {
-    
     /// <summary>
-/// Пользователь.
-/// </summary>
+    /// Пользователь.
+    /// </summary>
+    [Serializable]
     public class User
     {
         #region Свойства.
@@ -75,6 +75,11 @@ namespace CodeBlogFitness.BL.Model
             Heigth = heigth;
             
         }
+
+        public User()
+        {
+        }
+
         public override string ToString()
         {
             return Name; 
