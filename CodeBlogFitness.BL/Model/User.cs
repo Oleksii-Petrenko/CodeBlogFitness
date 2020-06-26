@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Runtime.CompilerServices;
 
 namespace CodeBlogFitness.BL.Model
 {
@@ -17,11 +17,11 @@ namespace CodeBlogFitness.BL.Model
         /// <summary>
         /// Пол.
         /// </summary>
-        public Gender Gender { get; }
+        public Gender Gender { get; set; }
         /// <summary>
         /// Дата рожления.
         /// </summary>
-        public DateTime BirthDate { get; }
+        public DateTime BirthDate { get; set; }
         /// <summary>
         /// Вес.
         /// </summary>
@@ -30,7 +30,21 @@ namespace CodeBlogFitness.BL.Model
         /// Рост.
         /// </summary>
         public double Heigth { get; set; }
+
+        /// <summary>
+        /// как опреденить коректний воззраст человека ....
+        ///     DateTime nowDate = DateTime.Today;
+        ///     int age = nowDate.Year - birthDate.Year;
+        ///      if (birthDate > nowDate.AddYers(-age)) age--;
+        /// </summary>
+
+
+        public int Age { get { return DateTime.Now.Year - BirthDate.Year; } }
+
+
         #endregion
+
+
 
         /// <summary>
         /// Создать нового пользователя.
@@ -73,16 +87,26 @@ namespace CodeBlogFitness.BL.Model
             BirthDate = birthDate;
             Weigth = weigth;
             Heigth = heigth;
-            
+
         }
 
         public User()
         {
         }
 
+        public User(string name)
+        {
+            if (string.IsNullOrWhiteSpace(name))
+            {
+                throw new ArgumentNullException("Имя пользователя не может быть пустим или null.", nameof(name));
+            }
+
+            Name = name;
+
+        }
         public override string ToString()
         {
-            return Name; 
+            return Name + " " + Age;
         }
     }
 }
