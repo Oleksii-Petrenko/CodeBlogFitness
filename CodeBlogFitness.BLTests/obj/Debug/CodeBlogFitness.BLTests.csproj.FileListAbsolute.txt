@@ -1,0 +1,16 @@
+D:\AAA\practice\CodeBlogFitness\CodeBlogFitness.BLTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\AAA\practice\CodeBlogFitness\CodeBlogFitness.BLTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\AAA\practice\CodeBlogFitness\CodeBlogFitness.BLTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\AAA\practice\CodeBlogFitness\CodeBlogFitness.BLTests\bin\Debug\CodeBlogFitness.BLTests.dll
+D:\AAA\practice\CodeBlogFitness\CodeBlogFitness.BLTests\bin\Debug\CodeBlogFitness.BLTests.pdb
+D:\AAA\practice\CodeBlogFitness\CodeBlogFitness.BLTests\bin\Debug\CodeBlogFitness.BL.dll
+D:\AAA\practice\CodeBlogFitness\CodeBlogFitness.BLTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+D:\AAA\practice\CodeBlogFitness\CodeBlogFitness.BLTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\AAA\practice\CodeBlogFitness\CodeBlogFitness.BLTests\bin\Debug\CodeBlogFitness.BL.pdb
+D:\AAA\practice\CodeBlogFitness\CodeBlogFitness.BLTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+D:\AAA\practice\CodeBlogFitness\CodeBlogFitness.BLTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+D:\AAA\practice\CodeBlogFitness\CodeBlogFitness.BLTests\obj\Debug\CodeBlogFitness.BLTests.csprojAssemblyReference.cache
+D:\AAA\practice\CodeBlogFitness\CodeBlogFitness.BLTests\obj\Debug\CodeBlogFitness.BLTests.csproj.CoreCompileInputs.cache
+D:\AAA\practice\CodeBlogFitness\CodeBlogFitness.BLTests\obj\Debug\CodeBlogFitness.BLTests.csproj.CopyComplete
+D:\AAA\practice\CodeBlogFitness\CodeBlogFitness.BLTests\obj\Debug\CodeBlogFitness.BLTests.dll
+D:\AAA\practice\CodeBlogFitness\CodeBlogFitness.BLTests\obj\Debug\CodeBlogFitness.BLTests.pdb

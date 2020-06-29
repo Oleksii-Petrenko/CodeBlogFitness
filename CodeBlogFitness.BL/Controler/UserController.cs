@@ -47,8 +47,6 @@ namespace CodeBlogFitness.BL.Controler
            
         }
          
-         
-
       /// <summary>
       /// Получить сохранений список пользователей.
       /// </summary>
