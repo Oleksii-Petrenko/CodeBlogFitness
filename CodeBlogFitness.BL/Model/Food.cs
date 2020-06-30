@@ -3,7 +3,7 @@
 
 namespace CodeBlogFitness.BL.Model
 {
-    class Food
+    public class Food
     {
         public string Name { get;}
         /// <summary>
@@ -41,16 +41,8 @@ namespace CodeBlogFitness.BL.Model
         /// </summary>
         private double CarbohydratesOneGramm { get { return Carbohydrates / 100.0; } }
 
-        public Food(string name)
-        {
-
-            //TODO: проверка.
-
-
-            Name = name;
-
-        }
-
+        public Food(string name) : this(name, 0, 0, 0, 0) { }
+        
         public Food(string name, double proteins, double callories , double fat, double carbohydrates)
         {
             //TODO: Проверка.
@@ -63,7 +55,10 @@ namespace CodeBlogFitness.BL.Model
             Carbohydrates = carbohydrates / 100.0;
         }
 
-
+        public override string ToString()
+        {
+            return Name; 
+        }
 
 
     }
