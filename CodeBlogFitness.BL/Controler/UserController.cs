@@ -10,8 +10,10 @@ namespace CodeBlogFitness.BL.Controler
     /// <summary>
     /// Контролер пользователя.
     /// </summary>
-    public class UserController
+    public class UserController : ControllerBase
     {
+        private const string USERS_FILE_NAME = "users.dat" ;
+
         /// <summary>
         /// Пользователь приложения.
         /// </summary>
@@ -53,25 +55,12 @@ namespace CodeBlogFitness.BL.Controler
       /// <returns></returns>
         private List<User> GetUsersData()
         {
-            var formatter = new BinaryFormatter();
-
-            using (var fs = new FileStream("users.dat", FileMode.OpenOrCreate))
-            {
-                if (fs.Length>0 && formatter.Deserialize(fs) is List<User> users)
-                {
-                    return users;
-                }
-                else
-                {
-                    return new List<User>();
-                }
-                
-
-            }
-
+            return Load<List<User>>(USERS_FILE_NAME) ?? new List<User>();
 
         }
 
+        
+        
         public void SetNewUserData(string genderName, DateTime birthDate, double wegth = 1,double heigth = 1)
         {
             //TODO: проверка.
@@ -86,14 +75,7 @@ namespace CodeBlogFitness.BL.Controler
 
         public void Save()
         {
-
-            var formatter = new BinaryFormatter();
-
-            using (var fs = new FileStream("users.dat", FileMode.OpenOrCreate))
-            {
-                formatter.Serialize(fs, Users);
-                
-            }
+            Save(USERS_FILE_NAME, Users);
 
         }
        
