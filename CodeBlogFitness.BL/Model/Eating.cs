@@ -9,6 +9,7 @@ namespace CodeBlogFitness.BL.Model
     /// <summary>
     /// Прийом пищи.
     /// </summary>
+    [Serializable]
     public class Eating
     {
         public DateTime Moment { get; }

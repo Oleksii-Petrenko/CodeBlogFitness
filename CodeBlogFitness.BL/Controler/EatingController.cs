@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Linq.Expressions;
 using System.Runtime.Serialization.Formatters.Binary;
 
@@ -14,19 +15,36 @@ namespace CodeBlogFitness.BL.Controler
 
         private User user;
         public List<Food> Foods { get; }
-        public List<Eating> Eatings { get; }
+        public Eating Eating { get; }
 
 
         public EatingController(User user)
         {
             this.user = user ?? throw new ArgumentNullException("Пользователь не может быть пустим", nameof(user));
             Foods = GetAllFoods();
-            Eatings = GetAllEatings();
+            Eating = GetEating();
+        }
+               
+        public void Add(Food food, double weigth)
+        {
+            var product = Foods.SingleOrDefault(f => f.Name == food.Name);
+            if (product == null)
+            {
+                Foods.Add(food);
+                Eating.Add(food, weigth);
+                Save();
+            }
+            else
+            {
+                Eating.Add(product, weigth);
+                Save();
+            }
+
         }
 
-        private List<Eating> GetAllEatings()
+        private Eating GetEating()
         {
-            return Load<List<Eating>>(EATINGS_FILE_NAME) ?? new List<Eating>();
+            return Load<Eating>(EATINGS_FILE_NAME) ?? new Eating(user);
         }
 
         private List<Food> GetAllFoods()
@@ -38,7 +56,7 @@ namespace CodeBlogFitness.BL.Controler
         private void Save()
         {
             Save(FOODS_FILE_NAME, Foods);
-            Save(EATINGS_FILE_NAME, Eatings);
+            Save(EATINGS_FILE_NAME, Eating);
         }
 
     }

@@ -32,7 +32,27 @@ namespace CodeBlogFitness.CMD
 
 
             Console.WriteLine(userController.CurrentUser);
+
+            Console.WriteLine("Что вы хотите сделать? = What you wonna to do ?");
+            Console.WriteLine("E - ввести прием пищи - pres E to add food");
+            var key = Console.ReadKey();
+            if (key.Key == ConsoleKey.E)
+            {
+                EnterEating();
+            }
+
+
             Console.ReadLine();
+            
+        }
+
+        private static Food EnterEating()
+        {
+            Console.WriteLine("Введите имя продукта - Enter product name please");
+            var food = Console.ReadLine();
+            Console.WriteLine("Введите вес порции, Enter weigth of food");
+            var weigth = ParsedDouble("вес порции");
+
             
         }
 
@@ -73,7 +93,7 @@ namespace CodeBlogFitness.CMD
                 }
                 else
                 {
-                    Console.WriteLine($"Неверный формат {name}");
+                    Console.WriteLine($"Неверный формат поля {name}");
                 }
 
             }
