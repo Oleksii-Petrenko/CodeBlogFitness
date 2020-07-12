@@ -1,6 +1,7 @@
 ﻿using CodeBlogFitness.BL.Controler;
+using CodeBlogFitness.BL.Model;
 using System;
-
+using System.Text;
 
 namespace CodeBlogFitness.CMD
 {
@@ -8,6 +9,7 @@ namespace CodeBlogFitness.CMD
     {
         static void Main(string[] args)
         {
+           //  Console.OutputEncoding = Encoding.UTF8;
             Console.WriteLine("Вас привествует приложение CodeBlogFitness - App say Hello");
 
             Console.WriteLine("Введите имя пользователя - Enter name");
@@ -16,6 +18,9 @@ namespace CodeBlogFitness.CMD
 
 
             var userController = new UserController(name);
+            var eatingController = new EatingController(userController.CurrentUser);
+
+
             if (userController.IsNewUser)
             {
                 Console.WriteLine("Введите пол - Enter Gender");
@@ -30,15 +35,24 @@ namespace CodeBlogFitness.CMD
 
             }
 
-
+            
             Console.WriteLine(userController.CurrentUser);
 
             Console.WriteLine("Что вы хотите сделать? = What you wonna to do ?");
             Console.WriteLine("E - ввести прием пищи - pres E to add food");
             var key = Console.ReadKey();
+            Console.WriteLine(); 
             if (key.Key == ConsoleKey.E)
             {
-                EnterEating();
+                var foods = EnterEating();
+                eatingController.Add(foods.Food, foods.Weigth);
+
+
+                foreach (var item in eatingController.Eating.Foods)
+                {
+                    Console.WriteLine($"\t{item.Key} - {item.Value}");
+                }
+
             }
 
 
@@ -46,13 +60,26 @@ namespace CodeBlogFitness.CMD
             
         }
 
-        private static Food EnterEating()
+        private static (Food Food,double Weigth) EnterEating()
         {
             Console.WriteLine("Введите имя продукта - Enter product name please");
             var food = Console.ReadLine();
-            Console.WriteLine("Введите вес порции, Enter weigth of food");
-            var weigth = ParsedDouble("вес порции");
+            
 
+            Console.WriteLine("Ведите калорийность - :");
+
+            var calories = ParsedDouble("Калорийность ");
+            var prot = ParsedDouble("Белки ");
+            var fats = ParsedDouble("жири ");
+            var carbs = ParsedDouble("углеводи");
+
+
+
+            var weigth = ParsedDouble("вес порции");
+            var product = new Food(food, prot, calories, fats, carbs);
+
+
+            return (Food: product, Weigth: weigth);
             
         }
 
