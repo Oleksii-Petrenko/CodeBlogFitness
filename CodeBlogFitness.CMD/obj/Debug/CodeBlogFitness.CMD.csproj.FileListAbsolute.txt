@@ -19,3 +19,9 @@ D:\AAA\CodeBlogFitness\CodeBlogFitness.CMD\obj\Debug\CodeBlogFitness.CMD.csprojA
 D:\AAA\CodeBlogFitness\CodeBlogFitness.CMD\obj\Debug\CodeBlogFitness.CMD.csproj.CopyComplete
 D:\AAA\CodeBlogFitness\CodeBlogFitness.CMD\obj\Debug\CodeBlogFitness.CMD.exe
 D:\AAA\CodeBlogFitness\CodeBlogFitness.CMD\obj\Debug\CodeBlogFitness.CMD.pdb
+D:\AAA\practice\CodeBlogFitness\CodeBlogFitness.CMD\bin\Debug\System.ValueTuple.dll
+D:\AAA\practice\CodeBlogFitness\CodeBlogFitness.CMD\bin\Debug\System.ValueTuple.xml
+D:\AAA\practice\CodeBlogFitness\CodeBlogFitness.CMD\obj\Debug\CodeBlogFitness.CMD.csproj.GenerateResource.cache
+D:\AAA\practice\CodeBlogFitness\CodeBlogFitness.CMD\obj\Debug\CodeBlogFitness.CMD.Langluages.Messages_en_us.resources
+D:\AAA\practice\CodeBlogFitness\CodeBlogFitness.CMD\obj\Debug\CodeBlogFitness.CMD.Langluages.Messages.resources
+D:\AAA\practice\CodeBlogFitness\CodeBlogFitness.CMD\obj\Debug\CodeBlogFitness.CMD.Langluages.Messages_ru_ru.resources
