@@ -43,8 +43,11 @@
   <ItemGroup>
     <Compile Include="Controler\ControllerBase.cs" />
     <Compile Include="Controler\EatingController.cs" />
+    <Compile Include="Controler\ExerciseController.cs" />
     <Compile Include="Controler\UserController.cs" />
+    <Compile Include="Model\Activity.cs" />
     <Compile Include="Model\Eating.cs" />
+    <Compile Include="Model\Exercise.cs" />
     <Compile Include="Model\Food.cs" />
     <Compile Include="Model\Gender.cs" />
     <Compile Include="Model\User.cs" />
