@@ -1,9 +1,7 @@
 ﻿using CodeBlogFitness.BL.Model;
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Runtime.Serialization.Formatters.Binary;
 
 namespace CodeBlogFitness.BL.Controler
 {
@@ -59,7 +57,6 @@ namespace CodeBlogFitness.BL.Controler
 
         }
 
-        
         
         public void SetNewUserData(string genderName, DateTime birthDate, double wegth = 1,double heigth = 1)
         {
