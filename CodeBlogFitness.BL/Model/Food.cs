@@ -6,23 +6,24 @@ namespace CodeBlogFitness.BL.Model
     [Serializable]
     public class Food
     {
-        public string Name { get;}
-        /// <summary>
-        /// Белки.
-        /// </summary>
-        public double Proteins { get; }
+        public int Id { get; set; }
+        public string Name { get; set; }
+        
+        public double Callories { get; set; }
+
+        public double Proteins { get; set; }
         /// <summary>
         /// Жиры.
         /// </summary>
-        public double Fat { get; }
+        public double Fat { get; set; }
         /// <summary>
         /// Углеводи.
         /// </summary>
-        public double Carbohydrates { get; }
+        public double Carbohydrates { get; set;}
         /// <summary>
         /// Калории за 100 грамм продукта.
         /// </summary>
-        public double Callories { get; }
+        
 
 
         /// <summary>
