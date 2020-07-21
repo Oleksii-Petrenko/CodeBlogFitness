@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace CodeBlogFitness.BL.Model
 {
@@ -9,7 +10,14 @@ namespace CodeBlogFitness.BL.Model
 
         public string Name { get; set; }
 
+        public virtual ICollection<Exercise> Exersises { get; set; }
+
         public double CaloriesPerMinute { get; set; }
+
+        public Activity()
+        {
+
+        }
 
         public Activity(string name, double caloriesPerMinutes)
         {
