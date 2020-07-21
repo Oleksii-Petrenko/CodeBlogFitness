@@ -6,13 +6,13 @@ namespace CodeBlogFitness.BL.Controler
 {
     class DatabaseDataSaver : IDatasaver
     {
-        T IDatasaver.Load<T>(string fileName)
+         T IDatasaver.Load<T>(string fileName) where T :class
         {
             
             using (var db = new FitnessContext()) 
             {
                 var result = db.Set<T>().Where(k => true).ToList();
-
+                return result;
             }
 
         }

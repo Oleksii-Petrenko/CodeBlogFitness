@@ -1,22 +1,21 @@
-﻿
+﻿using System.Collections.Generic;
+
 
 namespace CodeBlogFitness.BL.Controler
 {
     public abstract class ControllerBase
     {
-        protected IDatasaver saver = new SerializeDataSaver();
+        private readonly IDatasaver manager = new SerializeDataSaver();
 
-
-        protected void Save(string fileName, object item)
+        protected void Save<T>(List<T> item) where T : class
         {
-            saver.Save(fileName, item);
-
+            manager.Save(item);
         }
 
-        protected T Load<T>(string fileName)
+        protected List<T> Load<T>() where T : class
         {
-            return saver.Load<T>(fileName);
-            
+            return manager.Load<T>();
+
         }
 
     }

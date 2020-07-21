@@ -4,6 +4,12 @@ using System;
 using System.Globalization;
 using System.Resources;
 
+
+// https://github.com/shwanoff/CodeBlogFitness
+// 
+// 10 : 27
+
+
 namespace CodeBlogFitness.CMD
 {
     class Program
